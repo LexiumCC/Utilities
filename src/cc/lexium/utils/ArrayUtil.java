@@ -27,6 +27,8 @@ public class ArrayUtil {
         throw new Error();
     }
 
+    
+    
     public static void replace(Object[] list, Object target, Object substitute)
     {
         list[position(list, target)] = substitute;
@@ -37,4 +39,10 @@ public class ArrayUtil {
         return find(list, object) == null;
     }
 
+     public static Object getRandomItem(Object[] list)
+     {
+        Random random = new Random();
+        return list[random.nextInt(list.length)];
+     }
+    
 }
