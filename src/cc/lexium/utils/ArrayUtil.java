@@ -42,7 +42,7 @@ public class ArrayUtil {
      public static Object getRandomItem(Object[] list)
      {
         Random random = new Random();
-        return list[random.nextInt(list.length)];
+        return list[random.nextInt(list.length-1)];
      }
     
 }
